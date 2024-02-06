@@ -1,0 +1,335 @@
+Package: live-config-runit
+Source: live-config-sixmice
+Version: 1.03.44
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 26
+Depends: runit-init, sysv-rc | openrc, runit-helper, runit
+Conflicts: live-config-backend, live-config-sysvinit
+Replaces: live-config-backend, live-config-sysvinit
+Provides: live-config-backend, live-config-sysvinit
+Filename: ./live-config-runit-1.03.44_all.deb
+Size: 2916
+MD5sum: e50214e0c1cefee51f44b2c8d8e2dc87
+SHA1: 62b81bbfc270501583f65ccfb8aff1cc86905a28
+SHA256: 26e4605951c3337dd5801215cce0195004d05ac03ff6c0d2d05a1e5e5e44f66e
+Section: misc
+Priority: optional
+Homepage: https://salsa.debian.org/live-team/live-config
+Description: Live System Configuration Components (runit backend)
+ The Debian Live project maintains the components to build Debian based Live
+ systems and the official Debian Live images themselves.
+ .
+ live-config contains the components to configure a live system during the boot
+ process (late userspace).
+ .
+ This package contains the runit backend.
+
+Package: live-config-sixmice
+Version: 1.03.44
+Architecture: all
+Maintainer: Debian Live Maintainers <debian-live@lists.debian.org>
+Installed-Size: 116
+Depends: live-config-systemd | live-config-backend | live-config-runit
+Recommends: iproute2 | iproute, keyboard-configuration, live-config-doc, live-tools, locales | locales-all, sudo, user-setup
+Suggests: pciutils, wget
+Filename: ./live-config-sixmice-1.03.44_all.deb
+Size: 16268
+MD5sum: 2cce986689eeeda575fdb7a7f0b09daf
+SHA1: 7098c7c539f5bcd723d067f6912767cde5fb4713
+SHA256: 1026ea0245d4a39af287fa1ac9a6900f191054b04f6d49a848664952bbadf16c
+Section: misc
+Priority: optional
+Homepage: https://salsa.debian.org/live-team/live-config
+Description: Live System Configuration Components
+ The Debian Live project maintains the components to build Debian based Live
+ systems and the official Debian Live images themselves.
+ .
+ live-config contains the components to configure a live system during the boot
+ process (late userspace).
+ .
+ In addition to live-config, a backend for an init system is required, such as
+ live-config-systemd.
+
+Package: refracta2usb
+Version: 2.4.3
+Architecture: all
+Essential: no
+Maintainer: fsmithred@gmail.com
+Depends: syslinux, syslinux-common, gparted, yad, xterm, hwinfo, dosfstools, pv
+Recommends: cryptsetup, mbr, mtools
+Replaces: refracta2usb (<< 2.4.3)
+Filename: ./refracta2usb-2.4.3.deb
+Size: 56168
+MD5sum: 8aa25abf515d57846b989e497125fc20
+SHA1: 7f767351b01fc2386a579a27d99c6f780c1d704b
+SHA256: e2effcbec483858218a3cbe0ce0df812fd5eb2fd4bd938bee8fb28ecdf8fd704
+Section: system
+Priority: optional
+Description: Make live-USB from cdrom iso or from running live system.
+
+Package: refractainstaller-base
+Version: 9.6.6
+Architecture: all
+Origin: Devuan
+Maintainer: fsmithred <fsmithred@gmail.com>
+Installed-Size: 104
+Depends: bash (>= 4.1), rsync (>= 3.0), sed (>= 4.2), grep (>= 2.6), coreutils (>= 8.5), e2fsprogs (>= 1.41.12), mount (>= 2.17.2), fdisk | util-linux (<< 2.29.2-3~)
+Recommends: cryptsetup, dosfstools
+Suggests: grub-pc | grub-legacy | grub-efi-amd64 | grub-efi-ia32
+Filename: ./refractainstaller-base_9.6.6_all.deb
+Size: 35996
+MD5sum: 7662f88e164567dfb68dd92beccd2372
+SHA1: 40ab5a7b7956b20276352b868823d366f0fea043
+SHA256: 6719b345f5c555907e9f9e1b631f7f1275080c19fd3f6d53bc3d32e123741a20
+Section: misc
+Priority: optional
+Description: tool to install a running live-CD to hard drive.
+ Refracta Installer installs a live-CD or live-usb-hdd, including any
+ changes you've made to the running system onto a hard drive. This is
+ the cli-only version.
+
+Package: refractainstaller-gui
+Version: 9.6.6
+Architecture: all
+Origin: Devuan
+Maintainer: fsmithred <fsmithred@gmail.com>
+Installed-Size: 96
+Depends: gparted (>= 0.7.0), yad (>= 0.17.1.1), refractainstaller-base (>= 9.5.6), xterm
+Filename: ./refractainstaller-gui_9.6.6_all.deb
+Size: 31632
+MD5sum: c51bb89a94277f9750cbb51951db4f0d
+SHA1: b03063c8e078efd8321fb61420a38e953f659782
+SHA256: 8cc171765bff49047f3f2ba46aaaafc0a98cab2a16e01ea205cef909940b3f88
+Section: misc
+Priority: optional
+Description: tool to install a running live-CD to hard drive.
+ Refracta Installer installs a live-CD or live-usb-hdd, including any
+ changes you've made to the running system onto a hard drive. This is
+ the graphical version.
+
+Package: refractasnapshot-base
+Version: 10.2.12
+Architecture: all
+Maintainer: fsmithred <fsmithred@gmail.com>
+Installed-Size: 403
+Depends: bash (>= 4.1), mount, rsync (>= 3.0.7), squashfs-tools (>= 4.0), xorriso (>= 1.2.2), gawk (>= 3.1.7) | mawk (>= 1.3.3), live-boot (>= 2.0.15), live-config (>= 2.0.15), live-boot-initramfs-tools (>= 2.0.15), syslinux-common, syslinux (<< 3:6.03) | syslinux (>= 3:6.03), syslinux (<< 3:6.03) | isolinux (>= 3:6.03)
+Recommends: dosfstools, live-config-sysvinit | live-config-systemd | live-config-upstart | live-config-backend
+Filename: ./refractasnapshot-base_10.2.12_all.deb
+Size: 147808
+MD5sum: 25a6da820fbaa5beb73f8fc3d914f7bf
+SHA1: e8819684b48df7422407207ebf5f7ebddd2697c4
+SHA256: fa09973ac412d865004fdfc0b376df3b07793bb1b56f131f3686497ca181f233
+Section: misc
+Priority: optional
+Description: tool to create a live-CD from the running system
+ Refracta Snapshot copies the running system, squashes the copy and
+ makes an iso image file, which can be used to create a customized
+ live-CD.
+
+Package: refractasnapshot-gui
+Version: 10.2.12
+Architecture: all
+Maintainer: fsmithred <fsmithred@gmail.com>
+Installed-Size: 64
+Depends: bash (>= 4.1), rsync (>= 3.0.7), squashfs-tools (>= 4.0), xorriso (>= 1.2.2), gawk (>= 3.1.7) | mawk (>= 1.3.3), refractasnapshot-base (>= 10.2.0), yad (>= 0.17)
+Recommends: dosfstools
+Filename: ./refractasnapshot-gui_10.2.12_all.deb
+Size: 31908
+MD5sum: 9b8c11723dc5cbe424b76eaf57a9179b
+SHA1: fb76e4d258e1ad27167d5978d88326416c08395b
+SHA256: f93bf7eecc5d943118eb0ce0283ee47edca8cca0e5548e40db0052995faa68ea
+Section: misc
+Priority: optional
+Homepage: https://git.devuan.org/devuan-packages/refractasnapshot-gui
+Description: tool to create a live-CD from the running system
+ Refracta Snapshot copies the running system, squashes the copy and
+ makes an iso image file, which can be used to create a customized
+ live-CD.
+
+Package: sixmice-calamares-settings
+Version: 1.03.46
+Architecture: amd64
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 5735
+Pre-Depends: sixmicesettings (>= 1.03.44)
+Depends: calamares, cryptsetup, libglib2.0-bin, keyutils, pkexec, qml-module-qtquick-window2, qml-module-qtquick2, dconf-gsettings-backend | gsettings-backend, sixmicesettings, squashfs-tools, kbd
+Conflicts: calamares-settings-debian
+Provides: calamares-settings
+Filename: ./sixmice-calamares-settings-1.03.46_amd64.deb
+Size: 5273336
+MD5sum: 27f9c79e334a3c6f749d5e06b02cd65e
+SHA1: e68667ed19a9afa989aacedf882749dafa1d9a89
+SHA256: 7a87646390c48c5623ce60074eb4655556c0fe0b52a5f2af7abcd8fd44d3aaec
+Section: utils
+Priority: optional
+Description: SixMiceLinux settings for the Calamares Installer.
+ Calamares is a generic installer framework for Linux distributions.
+ By default, it contains a set of boilerplate wording and images. This
+ package provides the latest SixMiceLinux artwork as well as scripts that
+ supports EFI installations.
+ This package, which contains SixMiceLinux configuration files for the
+ Calamares, is based on Debian ones, calamares-settings-debian.
+ It also serves as an example for how derivatives can create their own
+ calamares-settings packages.
+
+Package: sixmice-lxde
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 192
+Pre-Depends: sixmicesettings (>= 1.02.43), sixmicewallpapers (>= 1.02.42)
+Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, orphan-sysvinit-scripts, lsb-release, synaptic, sudo, lxappearance, lxpanel, lxtask, lxsession-logout, openbox, light-locker, lxhotkey-gtk, lxinput, network-manager, network-manager-gnome, pcmanfm, lxde-core, lxsession, lxpolkit, lxde-common, lxde-settings-daemon, lxlauncher, ffmpegthumbnailer, menu, picom, lxrandr, lxterminal, obconf, lxsession-default-apps
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, gpicview, mousepad, mate-calc, xarchiver, xfce4-power-manager, xfce4-screenshooter
+Suggests: atril, smplayer, timidity, numix-gtk-theme
+Conflicts: systemd, systemd-sysv
+Filename: ./sixmice-lxde-1.03.46_all.deb
+Size: 12848
+MD5sum: 795bd038e90a833346358926ba1cec80
+SHA1: d1d85856e5f0069b4fe756c084e0880055c96105
+SHA256: 4ea6144046e954269a1f4845220243c65328feeac45247c8519a527678aac972
+Priority: standard
+Description: Settings for SixMiceLinux with LXDE.
+ This package applies SixMice configs only in /etc/skel
+ folder so them can be used only by new user, not by
+ the user who installs this package. If you want to apply
+ SixMice configs for your user account, you need
+ to install sixmice-lxde-userconfig.
+
+Package: sixmice-lxde-userconfig
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 200
+Pre-Depends: sixmicesettings (>= 1.03.44), sixmicewallpapers (>= 1.02.42), sixmice-lxde (>= 1.03.44)
+Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, orphan-sysvinit-scripts, lsb-release, synaptic, sudo, lxappearance, lxpanel, lxtask, lxsession-logout, openbox, light-locker, lxhotkey-gtk, lxinput, network-manager, network-manager-gnome, pcmanfm, lxde-core, lxsession, lxpolkit, lxde-common, lxde-settings-daemon, lxlauncher, ffmpegthumbnailer, menu, xfce4-screenshooter, lxrandr, lxterminal, obconf, lxsession-default-apps
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, gpicview, mousepad, mate-calc, xarchiver, xfce4-power-manager, timidity
+Suggests: atril, smplayer, timidity, numix-gtk-theme
+Conflicts: systemd, systemd-sysv
+Filename: ./sixmice-lxde-userconfig-1.03.46_all.deb
+Size: 13668
+MD5sum: de59116ec064e66d8ccacbe88c4a08d9
+SHA1: cffa332b07602717cabbb62aebccbbab174015e4
+SHA256: b8b4b93abb3ef52a46d522edaba92b25ab2b11ec7b1b1a707ec6ced0787210b7
+Priority: standard
+Description: Settings for SixMiceLinux with LXDE.
+ This package differs from sixmice-lxde package because
+ this package include script that will apply SixMice configs
+ for the user who installs this package, not only applying
+ its files in /etc/skel.
+
+Package: sixmice-mate
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 60
+Pre-Depends: sixmicesettings (>= 1.03.44), sixmicewallpapers (>= 1.02.39)
+Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, lightdm, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, network-manager-gnome, network-manager, mate-session-manager, mate-terminal, mate-applets, mate-calc, mate-applet-brisk-menu, mate-applet-appmenu, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, mate-menu, mate-notification-daemon, mate-notification-daemon-common, mate-power-manager, mate-power-manager-common, mate-screensaver, mate-screensaver-common, mate-sensors-applet, mate-sensors-applet-common, mate-tweak, mate-utils, mate-utils-common, mate-common, mate-control-center, mate-control-center-common, mate-indicator-applet, mate-indicator-applet-common, mate-window-applets-common, mate-window-buttons-applet, mate-window-title-applet, mate-window-menu-applet, vala-panel-appmenu-common, caja-open-terminal, engrampa, pluma, atril, ffmpegthumbnailer
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi
+Conflicts: systemd, systemd-sysv
+Filename: ./sixmice-mate-1.03.46_all.deb
+Size: 8464
+MD5sum: ef5a89a4d7ba72387f0b39d6136e403d
+SHA1: 5c86f89fd3909e455ef3c61cbb375077fb908861
+SHA256: cfcd9af97a5f146c732f2a8cf67e1dfc6c9b376939eff1f56b6efa02ee7b0a62
+Priority: standard
+Description: Settings for SixMiceLinux with MATE.
+ This package applies SixMice configs only in /etc/skel
+ folder so them can be used only by new user, not by
+ the user who installs this package. If you want to apply
+ SixMice configs for your user account, you need
+ to install sixmice-mate-userconfig.
+
+Package: sixmice-mate-userconfig
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 68
+Pre-Depends: sixmicesettings (>= 1.03.44), sixmicewallpapers (>= 1.02.39), sixmice-mate (>= 1.03.44)
+Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, lightdm, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, network-manager-gnome, network-manager, mate-session-manager, mate-terminal, mate-applets, mate-calc, mate-applet-brisk-menu, mate-applet-appmenu, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, mate-menu, mate-notification-daemon, mate-notification-daemon-common, mate-power-manager, mate-power-manager-common, mate-screensaver, mate-screensaver-common, mate-sensors-applet, mate-sensors-applet-common, mate-tweak, mate-utils, mate-utils-common, mate-common, mate-control-center, mate-control-center-common, mate-indicator-applet, mate-indicator-applet-common, mate-window-applets-common, mate-window-buttons-applet, mate-window-title-applet, mate-window-menu-applet, vala-panel-appmenu-common, caja-open-terminal, engrampa, pluma, atril, ffmpegthumbnailer
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi
+Conflicts: systemd, systemd-sysv
+Filename: ./sixmice-mate-userconfig-1.03.46_all.deb
+Size: 9028
+MD5sum: 1f5059339f66f4c91bb4ea434f5af285
+SHA1: d668d4a7226bbe18f8a7514ca51ee092da9f40f4
+SHA256: a618c9f9f8a9ca9dba7243c5fa19092ee24571e5603ea5c2591cfde4c466cea5
+Priority: standard
+Description: Settings for SixMiceLinux with MATE.
+ This package differs from sixmice-mate package because
+ this package includes script that will apply SixMice configs
+ for the the user who installs this package, not only applying
+ its files in /etc/skel.
+
+Package: sixmice-xfce
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 2792
+Pre-Depends: sixmicesettings (>= 1.03.44), sixmicewallpapers (>= 1.02.42)
+Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, xfce4-appfinder, xfce4-battery-plugin, xfce4-clipman, xfce4-clipman-plugin, xfce4-cpufreq-plugin, xfce4-cpugraph-plugin, xfce4-dict, xfce4-diskperf-plugin, xfce4-fsguard-plugin, mousepad, network-manager-gnome, network-manager, thunar, xfce4-genmon-plugin, xfce4-goodies, xfce4-helpers, xfce4-mailwatch-plugin, xfce4-netload-plugin, xfce4-notifyd, xfce4-panel, xfce4-panel-profiles, xfce4-places-plugin, xfce4-power-manager, xfce4-power-manager-plugins, xfce4-pulseaudio-plugin, xfce4-screenshooter, xfce4-sensors-plugin, xfce4-session, xfce4-settings, xfce4-smartbookmark-plugin, xfce4-systemload-plugin, xfce4-taskmanager, xfce4-terminal, xfce4-timer-plugin, xfce4-verve-plugin, xfce4-wavelan-plugin, xfce4-weather-plugin, xfce4-whiskermenu-plugin, xfce4-xkb-plugin, xfconf, xfdesktop4, xfwm4, libxfce4ui-utils, xfburn, ristretto, lightdm-gtk-greeter-settings, mugshot, menulibre
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, mate-calc, atril, bluebird-gtk-theme, light-locker, elementary-xfce-icon-theme, greybird-gtk-theme, lightdm, lightdm-gtk-greeter
+Conflicts: systemd, systemd-sysv
+Filename: ./sixmice-xfce-1.03.46_all.deb
+Size: 657388
+MD5sum: e17a5661626ff614383e989754880d59
+SHA1: 81fe2be29c51f3fa9973ebb19b5279be831c660e
+SHA256: d23206070b5741667242160bcfc04439009989a15f38c711239ff83fd188d3a1
+Priority: standard
+Description: Settings for SixMiceLinux with Xfce.
+ This package applies SixMice configs only in /etc/skel
+ folder so them can be used only by new user, not by
+ the user who installs this package. If you want to apply
+ SixMice configs for your user account, you need
+ to install sixmice-xfce-userconfig.
+
+Package: sixmice-xfce-userconfig
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 116
+Pre-Depends: sixmicesettings (>= 1.03.44), sixmicewallpapers (>= 1.02.39), sixmice-xfce (>= 1.03.44)
+Depends: sixmice-xfce, sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, lightdm, lightdm-gtk-greeter, xfce4-appfinder, xfce4-battery-plugin, xfce4-clipman, xfce4-clipman-plugin, xfce4-cpufreq-plugin, xfce4-cpugraph-plugin, xfce4-dict, xfce4-diskperf-plugin, xfce4-fsguard-plugin, mousepad, network-manager-gnome, network-manager, thunar, xfce4-genmon-plugin, xfce4-goodies, xfce4-helpers, xfce4-mailwatch-plugin, xfce4-netload-plugin, xfce4-notifyd, xfce4-panel, xfce4-panel-profiles, xfce4-places-plugin, xfce4-power-manager, xfce4-power-manager-plugins, xfce4-pulseaudio-plugin, xfce4-screenshooter, xfce4-sensors-plugin, xfce4-session, xfce4-settings, xfce4-smartbookmark-plugin, xfce4-systemload-plugin, xfce4-taskmanager, xfce4-terminal, xfce4-timer-plugin, xfce4-verve-plugin, xfce4-wavelan-plugin, xfce4-weather-plugin, xfce4-whiskermenu-plugin, xfce4-xkb-plugin, xfconf, xfdesktop4, xfwm4, libxfce4ui-utils, xfburn, ristretto, lightdm-gtk-greeter-settings, mugshot, menulibre, light-locker, thunar, elementary-xfce-icon-theme, greybird-gtk-theme
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, mate-calc, atril, bluebird-gtk-theme
+Conflicts: systemd, systemd-sysv
+Filename: ./sixmice-xfce-userconfig-1.03.46_all.deb
+Size: 7704
+MD5sum: edc3dfd6499e8575c4b8d6e120f1ac61
+SHA1: 1f651a8a681e6bc0fcd53d5aa9f4bbd2b73a306d
+SHA256: bfdba267ddb469c947ac4977a7bc8b3e23bc23f459ab838548b1bcfcf95305fb
+Priority: standard
+Description: Settings for SixMiceLinux with Xfce.
+ This package differs from sixmice-xfce package because
+ this package includes script that will apply SixMice configs
+ for the the user who installs this package, not only applying
+ its files in /etc/skel.
+
+Package: sixmicesettings
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 4776
+Depends: lsb-release, synaptic, sudo, xinit, xorg, fonts-noto-ui-core, fonts-noto-core, fonts-nanum, dmz-cursor-theme, unzip, unrar-free, ntfs-3g, avahi-daemon, avahi-utils, gvfs, mtools, floppyd, dosfstools, alsa-utils, sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, laptop-detect, dialog
+Recommends: qt5ct, qt5-style-plugins, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, appmenu-registrar, bamfdaemon, sixmicewallpapers
+Conflicts: systemd, systemd-sysv
+Filename: ./sixmicesettings-1.03.46_all.deb
+Size: 780796
+MD5sum: bb8079969a55dec87259b53fe3f08a2a
+SHA1: 7c17c96ae96cce739f6645c63f4b519649dd9153
+SHA256: d273d3cefadf5b023a73ac6480a10f7514d7f8d9c5442d35ff450c6b453851db
+Priority: required
+Description: Settings for SixMiceLinux.
+
+Package: sixmicewallpapers
+Version: 1.03.46
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 43608
+Filename: ./sixmicewallpapers-1.03.46_all.deb
+Size: 38601048
+MD5sum: 18ed186344e99ad3b92eb7f884d3f636
+SHA1: 714d87fab4f2cf90f3fd68d1c2d26de83adf2956
+SHA256: 391dfbe73fcfb60743592c6f13f44af65638013886e24988c935f9256e2dfa7d
+Priority: required
+Description: Wallpapers for SixMiceLinux.
+
