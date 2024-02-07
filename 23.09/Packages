@@ -1,0 +1,15 @@
+Package: mousesettings
+Version: 1.04.47
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Depends: lsb-release, synaptic, sudo, xinit, xorg, fonts-noto-ui-core, fonts-noto-core, fonts-nanum, dmz-cursor-theme, unzip, unrar-free, ntfs-3g, avahi-daemon, avahi-utils, gvfs, mtools, floppyd, dosfstools, alsa-utils, sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, laptop-detect, dialog
+Recommends: qt5ct, qt5-style-plugins, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, appmenu-registrar, bamfdaemon
+Conflicts: systemd, systemd-sysv
+Filename: ./mousesettings-1.04.47_all.deb
+Size: 2224
+MD5sum: a55d21f5c5a3e5d2db7f2cb4ac2e6d9e
+SHA1: 4be85d5a79672e2a8a4346b1d49f73c9e537d7aa
+SHA256: fb05ddb189af683df395ab7e1003fac279fc84755fecd56c9bdde7fb966073d8
+Priority: important
+Description: Settings for SixMiceLinux.
+

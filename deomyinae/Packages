@@ -148,19 +148,19 @@ Description: tool to create a live-CD from the running system
  live-CD.
 
 Package: sixmice-calamares-settings
-Version: 1.03.46
+Version: 1.04.47
 Architecture: amd64
 Maintainer: SixMice <sixmice6@gmail.com>
-Installed-Size: 5735
-Pre-Depends: sixmicesettings (>= 1.03.44)
+Installed-Size: 5504
+Pre-Depends: sixmicesettings (>= 1.03.45)
 Depends: calamares, cryptsetup, libglib2.0-bin, keyutils, pkexec, qml-module-qtquick-window2, qml-module-qtquick2, dconf-gsettings-backend | gsettings-backend, sixmicesettings, squashfs-tools, kbd
 Conflicts: calamares-settings-debian
 Provides: calamares-settings
-Filename: ./sixmice-calamares-settings-1.03.46_amd64.deb
-Size: 5273336
-MD5sum: 27f9c79e334a3c6f749d5e06b02cd65e
-SHA1: e68667ed19a9afa989aacedf882749dafa1d9a89
-SHA256: 7a87646390c48c5623ce60074eb4655556c0fe0b52a5f2af7abcd8fd44d3aaec
+Filename: ./sixmice-calamares-settings-1.04.47_amd64.deb
+Size: 5273340
+MD5sum: 09c77033670a24ec980f70f6b8afed15
+SHA1: 26af440d5db6662e104726e7435859b0929b6750
+SHA256: 161ca5a3d7a113d3cdb7ac19e03335addc731e6b4844794bfaa3942ca116d8f0
 Section: utils
 Priority: optional
 Description: SixMiceLinux settings for the Calamares Installer.
@@ -174,20 +174,20 @@ Description: SixMiceLinux settings for the Calamares Installer.
  calamares-settings packages.
 
 Package: sixmice-lxde
-Version: 1.03.46
+Version: 1.04.47
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 192
-Pre-Depends: sixmicesettings (>= 1.02.43), sixmicewallpapers (>= 1.02.42)
+Pre-Depends: sixmicesettings (>= 1.03.45), sixmicewallpapers (>= 1.03.45)
 Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, orphan-sysvinit-scripts, lsb-release, synaptic, sudo, lxappearance, lxpanel, lxtask, lxsession-logout, openbox, light-locker, lxhotkey-gtk, lxinput, network-manager, network-manager-gnome, pcmanfm, lxde-core, lxsession, lxpolkit, lxde-common, lxde-settings-daemon, lxlauncher, ffmpegthumbnailer, menu, picom, lxrandr, lxterminal, obconf, lxsession-default-apps
 Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, gpicview, mousepad, mate-calc, xarchiver, xfce4-power-manager, xfce4-screenshooter
 Suggests: atril, smplayer, timidity, numix-gtk-theme
 Conflicts: systemd, systemd-sysv
-Filename: ./sixmice-lxde-1.03.46_all.deb
-Size: 12848
-MD5sum: 795bd038e90a833346358926ba1cec80
-SHA1: d1d85856e5f0069b4fe756c084e0880055c96105
-SHA256: 4ea6144046e954269a1f4845220243c65328feeac45247c8519a527678aac972
+Filename: ./sixmice-lxde-1.04.47_all.deb
+Size: 12844
+MD5sum: e788eddb4b01c7d18490adc3d3687888
+SHA1: 1ab0a4dad90edfa3230fc79c201ba4d25f0fb383
+SHA256: 798f22c31ace63ae7a10b399dae74e3649845805b358c583579f307ba643f2b3
 Priority: standard
 Description: Settings for SixMiceLinux with LXDE.
  This package applies SixMice configs only in /etc/skel
@@ -262,19 +262,19 @@ Description: Settings for SixMiceLinux with MATE.
  its files in /etc/skel.
 
 Package: sixmice-xfce
-Version: 1.03.46
+Version: 1.04.47
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 2792
-Pre-Depends: sixmicesettings (>= 1.03.44), sixmicewallpapers (>= 1.02.42)
+Pre-Depends: sixmicesettings (>= 1.03.45), sixmicewallpapers (>= 1.03.45)
 Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, xfce4-appfinder, xfce4-battery-plugin, xfce4-clipman, xfce4-clipman-plugin, xfce4-cpufreq-plugin, xfce4-cpugraph-plugin, xfce4-dict, xfce4-diskperf-plugin, xfce4-fsguard-plugin, mousepad, network-manager-gnome, network-manager, thunar, xfce4-genmon-plugin, xfce4-goodies, xfce4-helpers, xfce4-mailwatch-plugin, xfce4-netload-plugin, xfce4-notifyd, xfce4-panel, xfce4-panel-profiles, xfce4-places-plugin, xfce4-power-manager, xfce4-power-manager-plugins, xfce4-pulseaudio-plugin, xfce4-screenshooter, xfce4-sensors-plugin, xfce4-session, xfce4-settings, xfce4-smartbookmark-plugin, xfce4-systemload-plugin, xfce4-taskmanager, xfce4-terminal, xfce4-timer-plugin, xfce4-verve-plugin, xfce4-wavelan-plugin, xfce4-weather-plugin, xfce4-whiskermenu-plugin, xfce4-xkb-plugin, xfconf, xfdesktop4, xfwm4, libxfce4ui-utils, xfburn, ristretto, lightdm-gtk-greeter-settings, mugshot, menulibre
 Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, mate-calc, atril, bluebird-gtk-theme, light-locker, elementary-xfce-icon-theme, greybird-gtk-theme, lightdm, lightdm-gtk-greeter
 Conflicts: systemd, systemd-sysv
-Filename: ./sixmice-xfce-1.03.46_all.deb
+Filename: ./sixmice-xfce-1.04.47_all.deb
 Size: 657388
-MD5sum: e17a5661626ff614383e989754880d59
-SHA1: 81fe2be29c51f3fa9973ebb19b5279be831c660e
-SHA256: d23206070b5741667242160bcfc04439009989a15f38c711239ff83fd188d3a1
+MD5sum: 8f0d4224bd7a19f366865d61d4953054
+SHA1: 3304409cbfeb22e831e19f781bf875e692faf990
+SHA256: c4f52208debdddee8fb084d9c6c8119f1c929fe48bdb756c6198f837bdf23679
 Priority: standard
 Description: Settings for SixMiceLinux with Xfce.
  This package applies SixMice configs only in /etc/skel
@@ -305,31 +305,32 @@ Description: Settings for SixMiceLinux with Xfce.
  its files in /etc/skel.
 
 Package: sixmicesettings
-Version: 1.03.46
+Version: 1.04.47
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 4776
 Depends: lsb-release, synaptic, sudo, xinit, xorg, fonts-noto-ui-core, fonts-noto-core, fonts-nanum, dmz-cursor-theme, unzip, unrar-free, ntfs-3g, avahi-daemon, avahi-utils, gvfs, mtools, floppyd, dosfstools, alsa-utils, sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, laptop-detect, dialog
 Recommends: qt5ct, qt5-style-plugins, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, appmenu-registrar, bamfdaemon, sixmicewallpapers
-Conflicts: systemd, systemd-sysv
-Filename: ./sixmicesettings-1.03.46_all.deb
-Size: 780796
-MD5sum: bb8079969a55dec87259b53fe3f08a2a
-SHA1: 7c17c96ae96cce739f6645c63f4b519649dd9153
-SHA256: d273d3cefadf5b023a73ac6480a10f7514d7f8d9c5442d35ff450c6b453851db
+Conflicts: systemd, systemd-sysv, mousesettings
+Filename: ./sixmicesettings-1.04.47_all.deb
+Size: 780708
+MD5sum: ef50180dd755435f6a8023de5ef4a348
+SHA1: e12f6b03e0b09e36078ab8f85fca74912d45b637
+SHA256: 1d6c2482eed5c0a5764e110368a70b324e45570dc18d1b23e28be2641ba9a61f
 Priority: required
 Description: Settings for SixMiceLinux.
 
 Package: sixmicewallpapers
-Version: 1.03.46
+Version: 1.04.47
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
-Installed-Size: 43608
-Filename: ./sixmicewallpapers-1.03.46_all.deb
-Size: 38601048
-MD5sum: 18ed186344e99ad3b92eb7f884d3f636
-SHA1: 714d87fab4f2cf90f3fd68d1c2d26de83adf2956
-SHA256: 391dfbe73fcfb60743592c6f13f44af65638013886e24988c935f9256e2dfa7d
+Installed-Size: 43760
+Pre-Depends: sixmicesettings (>= 1.03.45)
+Filename: ./sixmicewallpapers-1.04.47_all.deb
+Size: 40605148
+MD5sum: 76ec6c3a6ffbc76307ee6b351c696912
+SHA1: 26d3361b51f687da35e8414ef26375a78285817a
+SHA256: 05e5a5a62a7d29e7f3f5acc4b2e8bc6ce55bad1d2abd0069f6c13532f73f3487
 Priority: required
 Description: Wallpapers for SixMiceLinux.
 
