@@ -262,7 +262,7 @@ Description: Settings for SixMiceLinux with MATE.
  its files in /etc/skel.
 
 Package: sixmice-xfce
-Version: 1.04.47.2
+Version: 1.04.47.3
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 2792
@@ -270,11 +270,11 @@ Pre-Depends: sixmicesettings (>= 1.03.45), sixmicewallpapers (>= 1.03.45)
 Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, xfce4-appfinder, xfce4-battery-plugin, xfce4-clipman, xfce4-clipman-plugin, xfce4-cpufreq-plugin, xfce4-cpugraph-plugin, xfce4-dict, xfce4-diskperf-plugin, xfce4-fsguard-plugin, mousepad, network-manager-gnome, network-manager, thunar, xfce4-genmon-plugin, xfce4-goodies, xfce4-helpers, xfce4-mailwatch-plugin, xfce4-netload-plugin, xfce4-notifyd, xfce4-panel, xfce4-panel-profiles, xfce4-places-plugin, xfce4-power-manager, xfce4-power-manager-plugins, xfce4-pulseaudio-plugin, xfce4-screenshooter, xfce4-sensors-plugin, xfce4-session, xfce4-settings, xfce4-smartbookmark-plugin, xfce4-systemload-plugin, xfce4-taskmanager, xfce4-terminal, xfce4-timer-plugin, xfce4-verve-plugin, xfce4-wavelan-plugin, xfce4-weather-plugin, xfce4-whiskermenu-plugin, xfce4-xkb-plugin, xfconf, xfdesktop4, xfwm4, libxfce4ui-utils, xfburn, ristretto, lightdm-gtk-greeter-settings, mugshot, menulibre
 Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, mate-calc, atril, bluebird-gtk-theme, light-locker, elementary-xfce-icon-theme, greybird-gtk-theme, lightdm, lightdm-gtk-greeter
 Conflicts: systemd, systemd-sysv
-Filename: ./sixmice-xfce-1.04.47.2_all.deb
-Size: 657336
-MD5sum: ac24fb221552cf6f839f1ac9efce19e2
-SHA1: 559da82b07462a0f72e286452ba9f5504b28582e
-SHA256: 28c6a810f1191f6251809720c313ce23c596811d44eb27d6df83928582721c09
+Filename: ./sixmice-xfce-1.04.47.3_all.deb
+Size: 657400
+MD5sum: 7f924348812d01f5c7f8f082b5c08534
+SHA1: bd387994a06dc08a1c4f43ce1f4b62902fbf3117
+SHA256: 72e27f64d0ccce85ef1f931adea091fdcb9ce98a93dc1365ee5873d930ce7385
 Priority: standard
 Description: Settings for SixMiceLinux with Xfce.
  This package applies SixMice configs only in /etc/skel
