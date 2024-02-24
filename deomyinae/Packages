@@ -51,6 +51,25 @@ Description: Live System Configuration Components
  In addition to live-config, a backend for an init system is required, such as
  live-config-systemd.
 
+Package: qogir-dark-theme
+Version: 1.04.48
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 18384
+Pre-Depends: sixmicesettings (>= 1.03.45), sixmicewallpapers (>= 1.03.45)
+Recommends: tela-icon-theme
+Suggests: elementary-xfce-icon-theme, bluebird-gtk-theme, tela-icon-theme, arc-theme
+Filename: ./qogir-gtk-theme-1.04.48_all.deb
+Size: 2020980
+MD5sum: d29f0fdb1307d2f1e5f07152235729bd
+SHA1: 844765f2501ec2c0c50a11cab64e81a2f32fb722
+SHA256: bdefa08da589ea3417a533b64c827e3df53d0195cc8574a555ff90a8cb2b29eb
+Priority: important
+Description: Dark version of Qogir theme for GTK+ desktop environments.
+ Used as a default theme in SixMiceLinux.
+ Created by Vince Liuice (https://github.com/vinceliuice) and licensed
+ under GNU GPL 3. This package is intended to be used only in SixMiceLinux.
+
 Package: refracta2usb
 Version: 2.4.3
 Architecture: all
@@ -148,7 +167,7 @@ Description: tool to create a live-CD from the running system
  live-CD.
 
 Package: sixmice-calamares-settings
-Version: 1.04.47.2
+Version: 1.04.48
 Architecture: amd64
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 5504
@@ -156,11 +175,11 @@ Pre-Depends: sixmicesettings (>= 1.03.45)
 Depends: calamares, cryptsetup, libglib2.0-bin, keyutils, pkexec, qml-module-qtquick-window2, qml-module-qtquick2, dconf-gsettings-backend | gsettings-backend, sixmicesettings, squashfs-tools, kbd
 Conflicts: calamares-settings-debian
 Provides: calamares-settings
-Filename: ./sixmice-calamares-settings-1.04.47.2_amd64.deb
-Size: 5273284
-MD5sum: 2e7cfa5f0485aadeadc58aa1158b78d9
-SHA1: 6bafb830fd489e3b738f2c5c4e0bfdf13e868001
-SHA256: a33002978059bc73bc522e2454d615ae4c1939ff05f76da0d9cb025fbcadd4d6
+Filename: ./sixmice-calamares-settings-1.04.48_amd64.deb
+Size: 5273280
+MD5sum: 4a6e708750e9a9bf5802974f6cd04550
+SHA1: e4515b144ebd3d2d82223ac6844c9ae46692645a
+SHA256: c0788ebbe526696c9291b0e8bd1c1de1c258065da8e9992b805602a9fab64d79
 Section: utils
 Priority: optional
 Description: SixMiceLinux settings for the Calamares Installer.
@@ -174,20 +193,20 @@ Description: SixMiceLinux settings for the Calamares Installer.
  calamares-settings packages.
 
 Package: sixmice-lxde
-Version: 1.04.47
+Version: 1.04.48
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 192
 Pre-Depends: sixmicesettings (>= 1.03.45), sixmicewallpapers (>= 1.03.45)
 Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, orphan-sysvinit-scripts, lsb-release, synaptic, sudo, lxappearance, lxpanel, lxtask, lxsession-logout, openbox, light-locker, lxhotkey-gtk, lxinput, network-manager, network-manager-gnome, pcmanfm, lxde-core, lxsession, lxpolkit, lxde-common, lxde-settings-daemon, lxlauncher, ffmpegthumbnailer, menu, picom, lxrandr, lxterminal, obconf, lxsession-default-apps
-Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, gpicview, mousepad, mate-calc, xarchiver, xfce4-power-manager, xfce4-screenshooter
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, gpicview, mousepad, mate-calc, xarchiver, xfce4-power-manager, xfce4-screenshooter, qogir-gtk-theme, tela-icon-theme
 Suggests: atril, smplayer, timidity, numix-gtk-theme
 Conflicts: systemd, systemd-sysv
-Filename: ./sixmice-lxde-1.04.47_all.deb
-Size: 12844
-MD5sum: e788eddb4b01c7d18490adc3d3687888
-SHA1: 1ab0a4dad90edfa3230fc79c201ba4d25f0fb383
-SHA256: 798f22c31ace63ae7a10b399dae74e3649845805b358c583579f307ba643f2b3
+Filename: ./sixmice-lxde-1.04.48_all.deb
+Size: 12356
+MD5sum: d456405079e82a324ea986f5795b65c3
+SHA1: d99bfd815746c2f1370091d5a49350ca1a43725d
+SHA256: 6ce4a565785471c05d1103d4f09530f5e56c4337ff044a87c80a162b0d9dcac9
 Priority: standard
 Description: Settings for SixMiceLinux with LXDE.
  This package applies SixMice configs only in /etc/skel
@@ -219,19 +238,19 @@ Description: Settings for SixMiceLinux with LXDE.
  its files in /etc/skel.
 
 Package: sixmice-mate
-Version: 1.03.46
+Version: 1.04.48
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
-Installed-Size: 60
+Installed-Size: 56
 Pre-Depends: sixmicesettings (>= 1.03.44), sixmicewallpapers (>= 1.02.39)
 Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, lightdm, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, network-manager-gnome, network-manager, mate-session-manager, mate-terminal, mate-applets, mate-calc, mate-applet-brisk-menu, mate-applet-appmenu, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, mate-menu, mate-notification-daemon, mate-notification-daemon-common, mate-power-manager, mate-power-manager-common, mate-screensaver, mate-screensaver-common, mate-sensors-applet, mate-sensors-applet-common, mate-tweak, mate-utils, mate-utils-common, mate-common, mate-control-center, mate-control-center-common, mate-indicator-applet, mate-indicator-applet-common, mate-window-applets-common, mate-window-buttons-applet, mate-window-title-applet, mate-window-menu-applet, vala-panel-appmenu-common, caja-open-terminal, engrampa, pluma, atril, ffmpegthumbnailer
-Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, qogir-gtk-theme, tela-icon-theme
 Conflicts: systemd, systemd-sysv
-Filename: ./sixmice-mate-1.03.46_all.deb
-Size: 8464
-MD5sum: ef5a89a4d7ba72387f0b39d6136e403d
-SHA1: 5c86f89fd3909e455ef3c61cbb375077fb908861
-SHA256: cfcd9af97a5f146c732f2a8cf67e1dfc6c9b376939eff1f56b6efa02ee7b0a62
+Filename: ./sixmice-mate-1.04.48_all.deb
+Size: 9500
+MD5sum: 17c112cfe453268f81cd4eda44238f5b
+SHA1: d7bb647bd0028a06f8f8fe3d480ec6f82438515b
+SHA256: 02ed69a3c1f8b64d239a17c098b114702c3de29e04c0b71e01392c905ed6e508
 Priority: standard
 Description: Settings for SixMiceLinux with MATE.
  This package applies SixMice configs only in /etc/skel
@@ -262,19 +281,19 @@ Description: Settings for SixMiceLinux with MATE.
  its files in /etc/skel.
 
 Package: sixmice-xfce
-Version: 1.04.47.5
+Version: 1.04.48
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
-Installed-Size: 2792
+Installed-Size: 152
 Pre-Depends: sixmicesettings (>= 1.03.45), sixmicewallpapers (>= 1.03.45)
 Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, xfce4-appfinder, xfce4-battery-plugin, xfce4-clipman, xfce4-clipman-plugin, xfce4-cpufreq-plugin, xfce4-cpugraph-plugin, xfce4-dict, xfce4-diskperf-plugin, xfce4-fsguard-plugin, mousepad, network-manager-gnome, network-manager, thunar, xfce4-genmon-plugin, xfce4-goodies, xfce4-helpers, xfce4-mailwatch-plugin, xfce4-netload-plugin, xfce4-notifyd, xfce4-panel, xfce4-panel-profiles, xfce4-places-plugin, xfce4-power-manager, xfce4-power-manager-plugins, xfce4-pulseaudio-plugin, xfce4-screenshooter, xfce4-sensors-plugin, xfce4-session, xfce4-settings, xfce4-smartbookmark-plugin, xfce4-systemload-plugin, xfce4-taskmanager, xfce4-terminal, xfce4-timer-plugin, xfce4-verve-plugin, xfce4-wavelan-plugin, xfce4-weather-plugin, xfce4-whiskermenu-plugin, xfce4-xkb-plugin, xfconf, xfdesktop4, xfwm4, libxfce4ui-utils, xfburn, ristretto, lightdm-gtk-greeter-settings, mugshot, menulibre
-Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, mate-calc, atril, bluebird-gtk-theme, light-locker, elementary-xfce-icon-theme, greybird-gtk-theme, lightdm, lightdm-gtk-greeter
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, mate-calc, atril, bluebird-gtk-theme, light-locker, elementary-xfce-icon-theme, greybird-gtk-theme, lightdm, lightdm-gtk-greeter, qogir-gtk-theme, tela-icon-theme
 Conflicts: systemd, systemd-sysv
-Filename: ./sixmice-xfce-1.04.47.5_all.deb
-Size: 9888
-MD5sum: 39473067220f41f1097b5894fa958901
-SHA1: 8fb773659a92c70c24242ea30ca14029f02675a2
-SHA256: 21595d839d2f6f75f7c5e12f755ca3b17cb37bdedc21bef595c2a0a9b0e2dc31
+Filename: ./sixmice-xfce-1.04.48_all.deb
+Size: 10236
+MD5sum: 7bc43033ad31691728087a5b7a357bb1
+SHA1: 79ba3eff2ef14d65eb25a03315f7069196119324
+SHA256: 2a3ff250b2aa457f2eae095d9c255f63852d9af89a9688bbd11e69228823e58e
 Priority: standard
 Description: Settings for SixMiceLinux with Xfce.
  This package applies SixMice configs only in /etc/skel
@@ -305,18 +324,18 @@ Description: Settings for SixMiceLinux with Xfce.
  its files in /etc/skel.
 
 Package: sixmicesettings
-Version: 1.04.47
+Version: 1.04.48
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 4776
-Depends: lsb-release, synaptic, sudo, xinit, xorg, fonts-noto-ui-core, fonts-noto-core, fonts-nanum, dmz-cursor-theme, unzip, unrar-free, ntfs-3g, avahi-daemon, avahi-utils, gvfs, mtools, floppyd, dosfstools, alsa-utils, sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, laptop-detect, dialog
+Depends: lsb-release, synaptic, sudo, xinit, xorg, fonts-noto-ui-core, fonts-noto-core, fonts-nanum, dmz-cursor-theme, unzip, unrar-free, ntfs-3g, avahi-daemon, avahi-utils, gvfs, mtools, floppyd, dosfstools, alsa-utils, runit-init, runit-helper, sysv-rc | openrc, libpam-elogind, elogind, laptop-detect, dialog
 Recommends: qt5ct, qt5-style-plugins, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, appmenu-registrar, bamfdaemon, sixmicewallpapers
 Conflicts: systemd, systemd-sysv, mousesettings
-Filename: ./sixmicesettings-1.04.47_all.deb
-Size: 780708
-MD5sum: ef50180dd755435f6a8023de5ef4a348
-SHA1: e12f6b03e0b09e36078ab8f85fca74912d45b637
-SHA256: 1d6c2482eed5c0a5764e110368a70b324e45570dc18d1b23e28be2641ba9a61f
+Filename: ./sixmicesettings-1.04.48_all.deb
+Size: 780700
+MD5sum: 345df950ac0b40bd7e4fd7ad4c9dd4b3
+SHA1: cb28098ec5405ff33fdc88131e42b624781e9279
+SHA256: 67202dc1cc46cc2b9dd76a1a0b5b9b9d5fe75ae209cdbfbe5091f9130594f2d9
 Priority: required
 Description: Settings for SixMiceLinux.
 
@@ -333,4 +352,24 @@ SHA1: 26d3361b51f687da35e8414ef26375a78285817a
 SHA256: 05e5a5a62a7d29e7f3f5acc4b2e8bc6ce55bad1d2abd0069f6c13532f73f3487
 Priority: required
 Description: Wallpapers for SixMiceLinux.
+
+Package: tela-icon-theme
+Version: 1.04.48
+Architecture: all
+Maintainer: SixMice <sixmice6@gmail.com>
+Installed-Size: 82192
+Pre-Depends: sixmicesettings (>= 1.03.45), sixmicewallpapers (>= 1.03.45)
+Recommends: qogir-gtk-theme
+Suggests: elementary-xfce-icon-theme, bluebird-gtk-theme, numix-gtk-theme
+Conflicts: systemd, systemd-sysv
+Filename: ./tela-icon-theme-1.04.48_all.deb
+Size: 3350216
+MD5sum: 3c5bbd10010217a2a04319b063236270
+SHA1: 7a918653100270d7b2bd49e743e620689ae9b583
+SHA256: 95dc8d8ced6c2dac9f29719d0a05533f7d1a7642d5c40a83b6363a46bbd66a1f
+Priority: optional
+Description: Tela icon theme for desktop environments.
+ Additional icons for SixMiceLinux.
+ Created by Vince Liuice (https://github.com/vinceliuice) and licensed
+ under GNU GPL 3. This package is intended to be used only in SixMiceLinux.
 
