@@ -51,7 +51,7 @@ Description: Live System Configuration Components
  In addition to live-config, a backend for an init system is required, such as
  live-config-systemd.
 
-Package: qogir-dark-theme
+Package: qogir-gtk-theme
 Version: 1.04.48
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
@@ -61,9 +61,9 @@ Recommends: tela-icon-theme
 Suggests: elementary-xfce-icon-theme, bluebird-gtk-theme, tela-icon-theme, arc-theme
 Filename: ./qogir-gtk-theme-1.04.48_all.deb
 Size: 2020980
-MD5sum: d29f0fdb1307d2f1e5f07152235729bd
-SHA1: 844765f2501ec2c0c50a11cab64e81a2f32fb722
-SHA256: bdefa08da589ea3417a533b64c827e3df53d0195cc8574a555ff90a8cb2b29eb
+MD5sum: 16a298ecb646f065f03a1bbed88cc1df
+SHA1: d9dd2f4951fecf21ba08f492af1a7b9d6ed5b520
+SHA256: 1030b2de71d495ef1f32fb9e0172b212e517895b7307c2a15a4c16ddd2357acb
 Priority: important
 Description: Dark version of Qogir theme for GTK+ desktop environments.
  Used as a default theme in SixMiceLinux.
