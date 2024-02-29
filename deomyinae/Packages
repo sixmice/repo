@@ -157,10 +157,10 @@ Depends: calamares, cryptsetup, libglib2.0-bin, keyutils, pkexec, qml-module-qtq
 Conflicts: calamares-settings-debian
 Provides: calamares-settings
 Filename: ./sixmice-calamares-settings-1.04.50_amd64.deb
-Size: 5298456
-MD5sum: c0acecf0cc17ca77ac99cf0218dab8ef
-SHA1: 1907d878a96f625f75741a31c5e69fa8196e0a21
-SHA256: 98a855fdd7dd9266f612d0275aafdbb9527a119a9d9b4af6517eab8db2f8444c
+Size: 5298432
+MD5sum: 252f0b25602c95dbcf275cdb4b6639e9
+SHA1: eea635608c3c5c6816f0189fe6e2f0bce7e354fd
+SHA256: 9ecc8a25afe95fc7f83d2409f5e314cf54aaadfcbcb3be4e56e841981c5ffdfa
 Section: utils
 Priority: optional
 Description: SixMiceLinux settings for the Calamares Installer.
