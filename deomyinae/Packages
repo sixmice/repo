@@ -305,18 +305,18 @@ Description: Settings for SixMiceLinux with Xfce.
  its files in /etc/skel.
 
 Package: sixmicesettings
-Version: 1.04.50
+Version: 1.04.50.1
 Architecture: all
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 4984
 Depends: lsb-release, synaptic, sudo, xinit, xorg, fonts-noto-ui-core, fonts-noto-core, dmz-cursor-theme, unzip, unrar-free, ntfs-3g, avahi-daemon, avahi-utils, gvfs, mtools, floppyd, dosfstools, alsa-utils, runit-init, runit-helper, sysv-rc | openrc, libpam-elogind, elogind, laptop-detect, dialog
 Recommends: qt5ct, qt5-style-plugins, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, appmenu-registrar, bamfdaemon, sixmicewallpapers
 Conflicts: systemd, systemd-sysv
-Filename: ./sixmicesettings-1.04.50_all.deb
-Size: 902372
-MD5sum: 2992b5dc80ca0f47592125d69928c083
-SHA1: 193457bfd405f4d280983977c4ecc0bcb7c2f5e6
-SHA256: 2a17581ca64194be24a104425d249438b9fa34c429d7b2549f1fcdf776a2e307
+Filename: ./sixmicesettings-1.04.50.1_all.deb
+Size: 966504
+MD5sum: a8848018eb618c51d2c5b63995d051a8
+SHA1: a0feb56be15d72d9bd396a9d2e52fdec16d135a0
+SHA256: 2ec6b2f2959143bf4d1d0fab5b8d730336ce2cf46a98e1a1efea3f54f8abbad7
 Priority: required
 Description: Settings for SixMiceLinux.
 
