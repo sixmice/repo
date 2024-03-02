@@ -148,7 +148,7 @@ Description: tool to create a live-CD from the running system
  live-CD.
 
 Package: sixmice-calamares-settings
-Version: 1.04.50
+Version: 1.04.50.1
 Architecture: amd64
 Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 5536
@@ -156,11 +156,11 @@ Pre-Depends: sixmicesettings (>= 1.03.45)
 Depends: calamares, cryptsetup, libglib2.0-bin, keyutils, pkexec, qml-module-qtquick-window2, qml-module-qtquick2, dconf-gsettings-backend | gsettings-backend, sixmicesettings, squashfs-tools, kbd
 Conflicts: calamares-settings-debian
 Provides: calamares-settings
-Filename: ./sixmice-calamares-settings-1.04.50_amd64.deb
-Size: 5298432
-MD5sum: 252f0b25602c95dbcf275cdb4b6639e9
-SHA1: eea635608c3c5c6816f0189fe6e2f0bce7e354fd
-SHA256: 9ecc8a25afe95fc7f83d2409f5e314cf54aaadfcbcb3be4e56e841981c5ffdfa
+Filename: ./sixmice-calamares-settings-1.04.50.1_amd64.deb
+Size: 5298088
+MD5sum: 31da9a6cdd7ae12e30c96bb95a0bd9f8
+SHA1: 281704297da7d9a5338f1e58713fb05de92dae15
+SHA256: d05cf4a779369daa2676439e20982a608ffa585238b3b8159ba31d8962341e08
 Section: utils
 Priority: optional
 Description: SixMiceLinux settings for the Calamares Installer.
