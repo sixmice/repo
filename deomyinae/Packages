@@ -203,13 +203,13 @@ Maintainer: SixMice <sixmice6@gmail.com>
 Installed-Size: 80
 Pre-Depends: sixmicesettings (>= 1.04.47), sixmicewallpapers (>= 1.03.46)
 Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sysv-rc | openrc, libpam-elogind, elogind, lsb-release, synaptic, sudo, sixmicesettings, sixmicewallpapers, network-manager-gnome, network-manager, mate-session-manager, mate-terminal, mate-applets, mate-applet-brisk-menu, mate-applet-appmenu, appmenu-gtk-module-common, appmenu-gtk2-module, appmenu-gtk3-module, mate-menu, mate-notification-daemon, mate-notification-daemon-common, mate-power-manager, mate-power-manager-common, mate-sensors-applet, mate-sensors-applet-common, mate-utils, mate-utils-common, mate-common, mate-control-center, mate-control-center-common, mate-indicator-applet, mate-indicator-applet-common, mate-window-applets-common, mate-window-buttons-applet, mate-window-title-applet, mate-window-menu-applet, vala-panel-appmenu-common, caja-open-terminal, ffmpegthumbnailer
-Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, arc-theme, papirus-icon-theme, engrampa, pluma, atril, mate-screensaver, mate-screensaver-common, mate-calc, lightdm, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, mate-tweak
+Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, pluma, atril, mate-screensaver, mate-screensaver-common, mate-calc, lightdm, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, mate-tweak
 Conflicts: systemd, systemd-sysv
 Filename: ./sixmice-mate-1.05.51_all.deb
-Size: 11088
-MD5sum: 8f07c99fa444cd54cd55f7ed95157f9b
-SHA1: 3eda24035115691ebf9e175475e80b32ee43c5a4
-SHA256: ca6b211adec3ab7e597d0e61575e9ed8b43a8ad9a9e5d3f579450790bd740f9b
+Size: 11072
+MD5sum: af53df55882ceda7a85740a6dcc24749
+SHA1: 3ca1c44a2c10fdf96380a3d1a75eb1b6dff48f05
+SHA256: 084261421c5a94808d827062a2dd8577fd8b7dc31a1dd2009dd6af33b8febe73
 Priority: standard
 Description: Settings for SixMiceLinux with MATE.
  This package contains SixMiceLinux configurations for
