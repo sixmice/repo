@@ -206,10 +206,10 @@ Depends: sysvinit-core | runit-init, orphan-sysvinit-scripts | runit-helper, sys
 Recommends: qt5ct, qt5-style-plugins, bleachbit, gdebi, engrampa, pluma, atril, mate-screensaver, mate-screensaver-common, mate-calc, lightdm, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, mate-tweak
 Conflicts: systemd, systemd-sysv
 Filename: ./sixmice-mate-1.05.51_all.deb
-Size: 11072
-MD5sum: af53df55882ceda7a85740a6dcc24749
-SHA1: 3ca1c44a2c10fdf96380a3d1a75eb1b6dff48f05
-SHA256: 084261421c5a94808d827062a2dd8577fd8b7dc31a1dd2009dd6af33b8febe73
+Size: 11292
+MD5sum: c5ecfdfdeb48fd9fb5fcd406882e6f21
+SHA1: ecdfa90960e2a922f6c267b3c7037f4b9788d341
+SHA256: d6011bf380e5040db02f3340633430d34d553592a198e6c9bcd6f0a27ddfce89
 Priority: standard
 Description: Settings for SixMiceLinux with MATE.
  This package contains SixMiceLinux configurations for
